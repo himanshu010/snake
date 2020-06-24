@@ -31,6 +31,8 @@ function init() {
           cs - 2,
           cs - 2
         );
+
+      var bekaar = -1;
     },
     updatesnake: function () {
       console.log("Hello from update");
