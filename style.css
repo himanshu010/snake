@@ -1,0 +1,8 @@
+#mycanvas{
+    background-image: url("images/download.jpg");
+    width:50rem;
+    height:50rem;
+    border: 10px solid green;
+background-repeat: no-repeat;
+background-size: cover;
+}
