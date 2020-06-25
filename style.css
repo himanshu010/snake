@@ -1,8 +1,84 @@
-#mycanvas{
-    background-image: url("images/download.jpg");
-    width:50rem;
-    height:50rem;
-    border: 10px solid green;
-background-repeat: no-repeat;
-background-size: cover;
+.canvascon {
+  display: flex;
+  justify-content: center;
+}
+
+#mycanvas {
+  width: 600px;
+  height: 600px;
+  /* background-image: url(./images/download.jpg); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  background-color: black;
+  border: 10px solid goldenrod;
+}
+body {
+  background-color: gray;
+}
+
+.keypad {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  margin: 60px;
+  display: block;
+  justify-content: center;
+  min-height: 100px;
+  /* background-color: black; */
+  color: grey;
+  font-size: 30px;
+  width: 300px;
+}
+
+.row1 {
+  display: flex;
+  justify-content: center;
+}
+.row2 {
+  display: flex;
+  justify-content: space-between;
+}
+.row3 {
+  display: flex;
+  justify-content: center;
+}
+
+.up {
+  margin: 10px;
+  background-color: black;
+  border-radius: 8px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.down {
+  margin: 10px;
+  background-color: black;
+  border-radius: 8px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left {
+  margin: 10px;
+  background-color: black;
+  border-radius: 8px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  margin: 10px;
+  background-color: black;
+  border-radius: 8px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

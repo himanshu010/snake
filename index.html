@@ -1,20 +1,33 @@
-<<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
 
-    </head>
-    <body>
-        <canvas id="mycanvas"></canvas>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="canvascon">
+      <canvas id="mycanvas"> </canvas>
+    </div>
+    <div class="keypad">
+      <div class="buttons">
+        <div class="row row1">
+          <div class="up" id="up">up</div>
+        </div>
+        <div class="row row2">
+          <div class="left" id="left">left</div>
+          <div class="right" id="right">right</div>
+        </div>
+        <div class="row row3">
+          <div class="down" id="down">down</div>
+        </div>
+      </div>
+    </div>
 
-        <script src="demo.js" async defer></script>
-    </body>
+    <script src="demo.js" async defer></script>
+  </body>
 </html>

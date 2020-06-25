@@ -1,6 +1,10 @@
 function init() {
   score = 4;
   game_over = false;
+  var up = document.getElementById("up");
+  var left = document.getElementById("left");
+  var right = document.getElementById("right");
+  var down = document.getElementById("down");
 
   canvas = document.getElementById("mycanvas");
   w = h = canvas.width = canvas.height = 1100;
@@ -22,7 +26,7 @@ function init() {
     drawsnake: function () {
       var gradient1 = pen.createLinearGradient(50, 10, 700, 10);
       gradient1.addColorStop(0, "aqua");
-      gradient1.addColorStop(1, "rgba(20, 00, 205, 0.8)");
+      gradient1.addColorStop(1, "rgba(102, 102, 255, 0.8)");
       pen.fillStyle = gradient1;
       for (var i = 0; i < this.cells.length; i++)
         pen.fillRect(
@@ -31,8 +35,6 @@ function init() {
           cs - 2,
           cs - 2
         );
-
-      var bekaar = -1;
     },
     updatesnake: function () {
       console.log("Hello from update");
@@ -103,6 +105,26 @@ function init() {
   }
 
   document.addEventListener("keydown", keypressed);
+  up.onclick = function () {
+    if (snake.direction !== "down") {
+      snake.direction = "up";
+    }
+  };
+  left.onclick = function () {
+    if (snake.direction !== "right") {
+      snake.direction = "left";
+    }
+  };
+  right.onclick = function () {
+    if (snake.direction !== "left") {
+      snake.direction = "right";
+    }
+  };
+  down.onclick = function () {
+    if (snake.direction !== "up") {
+      snake.direction = "down";
+    }
+  };
 }
 function drawfood() {
   pen.fillRect(food.x * cs, food.y * cs, cs, cs);
