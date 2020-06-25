@@ -19,6 +19,7 @@ body {
 .keypad {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .buttons {
@@ -48,37 +49,40 @@ body {
 .up {
   margin: 10px;
   background-color: black;
+  color: white;
   border-radius: 8px;
-  width: 80px;
-  display: flex;
+  width: 120px;
+  height: 80px;
+  font-size: 40px;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .down {
   margin: 10px;
   background-color: black;
+  color: white;
   border-radius: 8px;
-  width: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 120px;
+  height: 80px;
+  font-size: 40px;
 }
 .left {
   margin: 10px;
   background-color: black;
+  color: white;
   border-radius: 8px;
-  width: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 120px;
+  height: 80px;
+  font-size: 40px;
 }
 .right {
   margin: 10px;
   background-color: black;
+  color: white;
   border-radius: 8px;
-  width: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 120px;
+  height: 80px;
+  font-size: 40px;
 }
